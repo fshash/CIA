@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "CIA",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequestBlocking",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "description": "Analyze malicious links with this handy CIA (Caught In Action)
+  extension!",
+  "background": {
+    "scripts": ["./dist/background-final.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "./html/mypage.html"
+  }
+}
